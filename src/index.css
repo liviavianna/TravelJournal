@@ -3,6 +3,7 @@
   --secondary-color: #2B283A;
   --link-color: #918E9B;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
