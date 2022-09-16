@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-color: #F55A5A;
+  --secondary-color: #2B283A;
+  --link-color: #918E9B;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+nav {
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 55px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: -0.075em;
+}
+.icon--world {
+  width: 24px;
+}
+.card {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+  gap: 2em;
+}
+h1 {
+  margin: 0;
+}
+.cards--list {
+  padding: 4em;
+}
+.card--loc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card--loc a {
+  color: var(--link-color);
+}
+.card--loc p {
+  letter-spacing: 0.3em;
+}
+.bold {
+  font-weight: 700;
+}
+.main--img {
+  max-width: 219px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.icon--marker {
+  width: 18px;
+  height: 26px;
+}
+.card--description {
+  max-width: 90%;
 }
